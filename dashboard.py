@@ -6,7 +6,7 @@ import dash_html_components as html
 import pandas as pd
 
 app_path = str(pathlib.Path(__file__).parent.resolve())
-df = pd.read_csv(os.path.join(app_path, os.path.join("data", "smarthome.csv")))
+df = pd.read_csv(os.path.join(app_path, os.path.join("data", "blink.csv")))
 
 app = dash.Dash(__name__, url_base_pathname='/dashboard/')
 server = app.server
